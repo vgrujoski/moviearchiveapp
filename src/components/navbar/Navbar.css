@@ -1,0 +1,32 @@
+.nav {
+    height: fit-content;
+}
+
+.navbar {
+    position: absolute;
+    overflow: hidden;
+    align-items: start;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(332deg, rgba(15,179,255,1) -31.11%, rgb(31, 31, 31) 71.77% );
+    transition: left 0.3s ;
+}
+
+.navbar.expanded {
+    left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        top: 0;
+        left: 0;
+        height: auto;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        display: flex;
+        background: transparent;
+    }
+}

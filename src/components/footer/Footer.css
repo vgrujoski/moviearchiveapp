@@ -1,0 +1,7 @@
+.dark .footer-background-overlay {
+    background: linear-gradient(rgba(24, 24, 27, 1), rgba(24, 24, 27, 0.4));
+}
+
+.light .footer-background-overlay {
+    background: linear-gradient(rgba(243, 242, 241, 1), rgba(243, 243, 241, 0.4));
+}

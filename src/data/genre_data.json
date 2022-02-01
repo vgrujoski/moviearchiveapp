@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Action",
+    "slug": "action"
+  },
+  {
+    "id": 2,
+    "name": "Drama",
+    "slug": "drama"
+  },
+  {
+    "id": 3,
+    "name": "Sci-Fi",
+    "slug": "sci-fi"
+  },
+  {
+    "id": 4,
+    "name": "Romantic",
+    "slug": "romantic"
+  },
+  {
+    "id": 5,
+    "name": "Comedy",
+    "slug": "comedy"
+  },
+  {
+    "id": 6,
+    "name": "Epic",
+    "slug": "epic"
+  },
+  {
+    "id": 7,
+    "name": "War",
+    "slug": "war"
+  },
+  {
+    "id": 8,
+    "name": "Thriller",
+    "slug": "thriller"
+  },
+  {
+    "id": 9,
+    "name": "Horror",
+    "slug": "horror"
+  }
+]
