@@ -23,7 +23,7 @@ function MovieBannerTitleSection(props) {
                             GenresData.filter(genre => filteredMovieGenre.genre_id === genre.id).map(
                                 filteredGenre => (
                                     <li className="movie-genre-item" key={filteredGenre.id}>
-                                        <Link to={`/genre/${filteredGenre.slug}#top`} className="text-black dark:text-white font-bold text-sm bg-opacity-30 bg-gray-500 dark:bg-opacity-30 dark:bg-white mx-1 border border-transparent hover:border-gray-600 dark:hover:border-gray-400 transition-all rounded-lg px-3 py-0.5" key={filteredGenre.id}>
+                                        <Link to={`/genre/${filteredGenre.slug}#top`} className="text-black dark:text-white font-bold text-sm bg-opacity-30 bg-gray-500 dark:bg-opacity-30 dark:bg-white mx-1 border border-transparent hover:border-gray-600 dark:hover:border-gray-400 transition-all rounded-md px-3 py-0.5" key={filteredGenre.id}>
                                             {filteredGenre.name}
                                         </Link>
                                     </li>

@@ -1,6 +1,6 @@
 function RoundedBox(props) {
     return (
-        <div className="p-6 md:p-8 rounded-3xl bg-white dark:bg-zinc-600 dark:bg-opacity-10">
+        <div className="p-6 md:p-8 rounded-2xl bg-white dark:bg-neutral-500 dark:bg-opacity-10">
             {props.children}
         </div>
     );

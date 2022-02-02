@@ -10,9 +10,6 @@ function Links() {
             <li className="transition duration-300 my-5 md:py-2 md:my-0 rounded-lg md:hover:bg-gray-500 md:hover:bg-opacity-10 md:dark:hover:bg-white md:dark:hover:bg-opacity-10 md:hover:text-black md:dark:hover:text-white">
                 <Link to="/about" className="text-2xl md:text-base md:px-3">About</Link>
             </li>
-            <li className="transition duration-300 my-5 md:p-2 md:ml-1 md:my-0 rounded-full cursor-pointer md:hover:bg-gray-500 md:hover:bg-opacity-10 md:dark:hover:bg-white md:dark:hover:bg-opacity-10 md:hover:text-black md:dark:hover:text-white">
-                <DarkModeToggle />
-            </li>
         </ul>
     )
 }

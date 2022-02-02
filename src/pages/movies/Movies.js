@@ -80,13 +80,13 @@ class Movies extends React.Component {
                 {/*        {pagesList}*/}
                 {/*    </div>*/}
                 {/*</Container>*/}
-                <div className="mt-32 mb-10">
+                <div className="mt-24 md:mt-32 mb-10">
                     <Container>
                         <SectionTitle title="Movies"/>
                     </Container>
                 </div>
                 <MoviesList movies={this.listMovies}/>
-                <div className="mt-32 mb-10">
+                <div className="mt-24 md:mt-32 mb-10">
                     <Container>
                         <SectionTitle title="Series"/>
                     </Container>

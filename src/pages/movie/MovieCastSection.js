@@ -49,7 +49,7 @@ function MovieCastSection(props) {
                                     },
                                     576: {
                                         gap: '0.5rem',
-                                        perPage: 4,
+                                        perPage: 3,
                                     },
                                 }
                             }}
@@ -60,6 +60,7 @@ function MovieCastSection(props) {
                                     key={castItem.id}>
                                     <MovieCastItem
                                         actorId={castItem.actor_id}
+                                        actorRole={castItem.role_name}
                                     />
                                 </SplideSlide>
                             )
