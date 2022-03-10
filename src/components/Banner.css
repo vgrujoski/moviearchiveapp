@@ -1,5 +1,4 @@
 .banner-section {
-    height: 600px;
     position: relative;
     overflow: hidden;
 }
@@ -16,32 +15,16 @@
     background-size: cover;
 }
 
-.light .banner-background-overlay-bottom {
-    background: linear-gradient(transparent, rgb(243, 242, 241));
+.light .banner-background-overlay {
+    background-color: rgba(245, 245, 244, 0.3)
 }
 
-.dark .banner-background-overlay-bottom {
-    background: linear-gradient(transparent, rgb(24, 24, 27));
+.dark .banner-background-overlay {
+    background-color: rgba(12, 12, 12, 0.55)
 }
 
-@media only screen and (min-width: 769px) {
-    .banner-section {
-        height: 650px;
-    }
-
+@media only screen and (min-width: 992px) {
     .actor-banner-section {
         height: 550px;
-    }
-
-    .banner-background-image {
-        background-size: 80%;
-    }
-
-    .light .banner-background-overlay {
-        background: linear-gradient(90deg, rgb(243, 242, 241) 10%, transparent, rgb(243, 242, 241) 90%);
-    }
-
-    .dark .banner-background-overlay {
-        background: linear-gradient(90deg, rgb(24, 24, 27) 10%, transparent, rgb(24, 24, 27) 90%);
     }
 }

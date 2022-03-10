@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import ActorData from '../../data/actors_data.json';
 import MoviesData from '../../data/movie_data.json';
 import MoviesActorData from '../../data/movies_actors_data.json';
-import ActorBanner from "./ActorBanner";
+import ActorPersonalInfo from "./ActorPersonalInfo";
 import ActorInfo from "./ActorInfo";
 import MoviesList from "../movies/MoviesList";
 import Container from "../../components/Container";
@@ -31,31 +31,34 @@ function Actor() {
         <div id="top">
             { ActorData.filter(actor => actor.id == actorSlugId[0].id).map(
                 filteredActor => (
-                <div key={filteredActor.id}>
-                    <ActorBanner actor={filteredActor}/>
-                    <ActorInfo actor={filteredActor}/>
-
-                    {Movies.length > 0 &&
-                    <div>
-                        <div className="mt-16 mb-10">
-                            <Container>
-                                <SectionTitle title="Movies"/>
-                            </Container>
+                <div key={filteredActor.id} className="mt-10 md:mt-20">
+                    <Container>
+                        <div className="grid grid-cols-12 gap-5">
+                            <ActorPersonalInfo actor={filteredActor}/>
+                            <ActorInfo actor={filteredActor}/>
                         </div>
-                        <MoviesList movies={Movies}/>
-                    </div>
-                    }
+                        <div className="grid grid-cols-12 gap-5">
+                            <div className="col-span-12 xl:col-span-9 xl:col-start-4 mt-8 md:mt-0">
+                                {Movies.length > 0 &&
+                                <div>
+                                    <div className="mt-16 mb-10">
+                                        <SectionTitle title="Movies"/>
+                                    </div>
+                                    <MoviesList movies={Movies}/>
+                                </div>
+                                }
 
-                    {Series.length > 0 &&
-                    <div>
-                        <div className="mt-16 mb-10">
-                            <Container>
-                                <SectionTitle title="Series"/>
-                            </Container>
+                                {Series.length > 0 &&
+                                <div>
+                                    <div className="mt-16 mb-10">
+                                        <SectionTitle title="Series"/>
+                                    </div>
+                                    <MoviesList movies={Series}/>
+                                </div>
+                                }
+                            </div>
                         </div>
-                        <MoviesList movies={Series}/>
-                    </div>
-                    }
+                    </Container>
                 </div>
                 )
             )}

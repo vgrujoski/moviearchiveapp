@@ -1,6 +1,5 @@
 import MovieCastItem from "./MovieCastItem"
 import SectionTitle from "../../components/SectionTitle";
-import RoundedBox from "../../components/RoundedBox";
 import Container from "../../components/Container";
 import { useParams } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';

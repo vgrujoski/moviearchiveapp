@@ -29,23 +29,27 @@ function Genre() {
         <div id="top">
             {Movies.length > 0 &&
             <div>
-                <div className="mt-32 mb-10">
+                <div className="mt-20 mb-10">
                     <Container>
                         <SectionTitle title="Movies"/>
                     </Container>
                 </div>
-                <MoviesList movies={Movies}/>
+                <Container>
+                    <MoviesList movies={Movies}/>
+                </Container>
             </div>
             }
 
             {Series.length > 0 &&
             <div>
-                <div className="mt-32 mb-10">
+                <div className="mt-20 mb-10">
                     <Container>
                         <SectionTitle title="Series"/>
                     </Container>
                 </div>
-                <MoviesList movies={Series}/>
+                <Container>
+                    <MoviesList movies={Series}/>
+                </Container>
             </div>
             }
         </div>
