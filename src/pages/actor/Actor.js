@@ -44,7 +44,7 @@ function Actor() {
                                     <div className="mt-16 mb-10">
                                         <SectionTitle title="Movies"/>
                                     </div>
-                                    <MoviesList movies={Movies}/>
+                                    <MoviesList searchPlaceholder="Search Movies" movies={Movies}/>
                                 </div>
                                 }
 
@@ -53,7 +53,7 @@ function Actor() {
                                     <div className="mt-16 mb-10">
                                         <SectionTitle title="Series"/>
                                     </div>
-                                    <MoviesList movies={Series}/>
+                                    <MoviesList searchPlaceholder="Search Series" movies={Series}/>
                                 </div>
                                 }
                             </div>

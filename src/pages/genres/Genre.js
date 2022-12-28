@@ -35,7 +35,7 @@ function Genre() {
                     </Container>
                 </div>
                 <Container>
-                    <MoviesList movies={Movies}/>
+                    <MoviesList searchPlaceholder="Search Movies" movies={Movies}/>
                 </Container>
             </div>
             }
@@ -48,7 +48,7 @@ function Genre() {
                     </Container>
                 </div>
                 <Container>
-                    <MoviesList movies={Series}/>
+                    <MoviesList searchPlaceholder="Search Series" movies={Series}/>
                 </Container>
             </div>
             }

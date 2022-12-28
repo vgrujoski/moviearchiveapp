@@ -14,8 +14,6 @@ function App() {
       <Layout>
           <Routes>
               <Route path="/" element={<Movies />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
               <Route path="/movie/:movieSlug" element={<Movie />} />
               <Route path="/movie/:movieSlug/cast" element={<MovieCast />} />
               <Route path="/actor/:actorSlug" element={<Actor />} />
