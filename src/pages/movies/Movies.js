@@ -15,7 +15,7 @@ function Movies() {
                 </Container>
             </div>
             <Container>
-                <MoviesList movies={listMovies}/>
+                <MoviesList searchPlaceholder="Search Movies" movies={listMovies}/>
             </Container>
             <div className="mt-20 mb-10">
                 <Container>
@@ -23,7 +23,7 @@ function Movies() {
                 </Container>
             </div>
             <Container>
-                <MoviesList movies={listSeries}/>
+                <MoviesList searchPlaceholder="Search Series" movies={listSeries}/>
             </Container>
         </div>
     )
